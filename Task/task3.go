@@ -26,6 +26,6 @@ func main() {
 
 	//modulus
 	const g = a % b
-	fmt.Println(g)a
+	fmt.Println(g)
 
 }
