@@ -18,9 +18,9 @@ import (
 func main() {
 	arr := []int{13, 12, 7, 3, 5, 2, 1}
 	sb := SecondBiggest1(arr)
-	sb2 := SecondBiggest2(arr)
+	//sb2 := SecondBiggest2(arr)
 	ss := SecondSmallest(arr)
-	fmt.Println(sb, sb2)
+	fmt.Println(sb)
 	fmt.Println(ss)
 
 }
@@ -39,19 +39,6 @@ func SecondBiggest1(arr []int) int { //time complexity O(2n)
 				max2 = arr[i]
 			}
 		}
-	}
-	return max2
-}
-func SecondBiggest2(arr []int) int { //time complexity O(n)
-	max1 := math.MinInt
-	max2 := math.MinInt
-	for i := 0; i < len(arr); i++ {
-
-		if max2 < max1 && arr[i] > max2 && arr[i] > max1 {
-			max1 = arr[i]
-			max2 = max1
-		}
-
 	}
 	return max2
 }
